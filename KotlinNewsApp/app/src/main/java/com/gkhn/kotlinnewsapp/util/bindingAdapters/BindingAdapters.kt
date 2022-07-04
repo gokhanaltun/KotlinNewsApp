@@ -6,6 +6,6 @@ import com.gkhn.kotlinnewsapp.util.extensions.loadImageFromUrl
 
 
 @BindingAdapter("android:urlSrc")
-fun urlSrc(view: ImageView, url: String){
+fun urlSrc(view: ImageView, url: String?){
     view.loadImageFromUrl(url)
 }
