@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">KotlinNewsApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="categoryNameHeadline">HeadLines</string>
+    <string name="view_all"><![CDATA[View All >]]></string>
+    <string name="categoryNameScience">Science</string>
+    <string name="categoryNameSports">Sports</string>
+    <string name="descriptionNewsImage">newsImage</string>
+    <string name="descriptionAddBookmark">addBookmark</string>
+</resources>
