@@ -1,4 +1,4 @@
-package com.gkhn.kotlinnewsapp.util.contants
+package com.gkhn.kotlinnewsapp.util.constants
 
 object ApiConstants {
     const val BASE_URL = "https://newsapi.org/v2/"

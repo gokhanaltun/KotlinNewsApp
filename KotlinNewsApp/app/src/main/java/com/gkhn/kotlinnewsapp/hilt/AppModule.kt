@@ -3,7 +3,7 @@ package com.gkhn.kotlinnewsapp.hilt
 import com.gkhn.kotlinnewsapp.network.NewsService
 import com.gkhn.kotlinnewsapp.repository.INewsRepository
 import com.gkhn.kotlinnewsapp.repository.NewsRepository
-import com.gkhn.kotlinnewsapp.util.contants.ApiConstants.BASE_URL
+import com.gkhn.kotlinnewsapp.util.constants.ApiConstants.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

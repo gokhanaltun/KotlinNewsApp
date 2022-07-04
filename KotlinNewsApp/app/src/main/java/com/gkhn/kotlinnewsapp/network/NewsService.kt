@@ -1,7 +1,7 @@
 package com.gkhn.kotlinnewsapp.network
 
 import com.gkhn.kotlinnewsapp.model.NewsResponse
-import com.gkhn.kotlinnewsapp.util.contants.ApiConstants.API_KEY
+import com.gkhn.kotlinnewsapp.util.constants.ApiConstants.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
