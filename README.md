@@ -2,7 +2,7 @@
  
 Simple News App Example With Kotlin
 
-### Uses:
+### With:
 - `MVVM`
 - `Live Data`
 - `Data Binding`
