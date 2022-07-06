@@ -37,20 +37,25 @@ class MainFragment : Fragment() {
 
         initRecyclerViews(view.context)
         initObservers()
-        viewModel.getTopHeadlines()
-        viewModel.getTopScienceHeadlines()
-        viewModel.getTopSportsHeadlines()
+        
+        viewModel.apply {
+            getTopHeadlines()
+            getTopScienceHeadlines()
+            getTopSportsHeadlines()
+        }
     }
 
-    private fun initRecyclerViews(context: Context){
-        binding.rcvHeadlines.initHorizontal(context)
-        binding.rcvScience.initHorizontal(context)
-        binding.rcvSports.initHorizontal(context)
+    private fun initRecyclerViews(context: Context) {
+        binding.apply {
+            rcvHeadlines.initHorizontal(context)
+            rcvScience.initHorizontal(context)
+            rcvSports.initHorizontal(context)
+        }
     }
 
-    private fun initObservers(){
+    private fun initObservers() {
         viewModel.topHeadlines.observe(viewLifecycleOwner, {
-            when(it.status){
+            when (it.status) {
                 DataStatus.Status.SUCCESS ->
                     binding.rcvHeadlines.adapter = HeadlinesRcvAdapter(it.data!!.articles)
 
@@ -60,7 +65,7 @@ class MainFragment : Fragment() {
         })
 
         viewModel.topScienceHeadlines.observe(viewLifecycleOwner, {
-            when(it.status){
+            when (it.status) {
                 DataStatus.Status.SUCCESS ->
                     binding.rcvScience.adapter = HeadLineCategoryRcvAdapter(it.data!!.articles)
 
@@ -70,7 +75,7 @@ class MainFragment : Fragment() {
         })
 
         viewModel.topSportsHeadlines.observe(viewLifecycleOwner, {
-            when(it.status){
+            when (it.status) {
                 DataStatus.Status.SUCCESS ->
                     binding.rcvSports.adapter = HeadLineCategoryRcvAdapter(it.data!!.articles)
 
