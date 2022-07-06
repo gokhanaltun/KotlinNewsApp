@@ -13,4 +13,4 @@ Simple News App Example With Kotlin
 
 ### Screenshot
 
- <img alt="CF" src="assets/imageSearch.jpg"> </img>
+ <img alt="CF" src="assets/newsApp.jpg"> </img>
